@@ -24,6 +24,7 @@ app.get('/weather/:city', (req, res) => {
     }
 
     const response = {
+        "city": req.params.city,
         "temperature": Math.floor(Math.random() * 35 - 5) + " °C",
         "wind": Math.floor(Math.random() * 12) + " km/h",
         "description": desc,
