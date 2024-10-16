@@ -20,7 +20,9 @@ app.get('/weather/:city', (req, res) => {
         case 3: 
             desc = "Cloudy";
             break;
-            default: "Sunny"
+            default:
+            desc = "Sunny";
+            break;
     }
 
     const response = {
