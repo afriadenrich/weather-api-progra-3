@@ -44,17 +44,17 @@ app.get('/weather/:city', (req, res) => {
         "description": desc,
         "forecast": [
           {
-            "day": "1",
+            "day": 1,
             "temperature": Math.floor(Math.random() * 35 - 5) + " °C",            
             "wind": Math.floor(Math.random() * 12) + " km/h"
           },
           {
-            "day": "2",
+            "day": 2,
             "temperature": Math.floor(Math.random() * 35 - 5) + " °C",
             "wind": Math.floor(Math.random() * 12) + " km/h"
           },
           {
-            "day": "3",
+            "day": 3,
             "temperature": Math.floor(Math.random() * 35 -5) + " °C",
             "wind": Math.floor(Math.random() * 12) + " km/h"
           }
